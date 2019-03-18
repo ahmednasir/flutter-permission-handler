@@ -60,7 +60,7 @@ class PermissionManager: NSObject {
                         return
                 }
                 
-                let optionsKeyDictionary = [UIApplicationOpenExternalURLOptionsKey.universalLinksOnly: NSNumber(value: true)]
+                let optionsKeyDictionary = [UIApplication.OpenExternalURLOptionsKey.universalLinksOnly: NSNumber(value: true)]
                 
                 UIApplication.shared.open(url, options: optionsKeyDictionary, completionHandler: { (success) in result(success) });
                 return
